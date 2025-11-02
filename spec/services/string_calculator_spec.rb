@@ -22,6 +22,10 @@ RSpec.describe StringCalculator, type: :service do
       it 'handles newlines as delimiters' do
         expect(StringCalculator.add("1\n2,3")).to eq 6
       end
+
+      it 'throws exception for negative number' do
+        expect { StringCalculator.add('1,-2') }.to raise_error 'negative numbers not allowed -2'
+      end
     end
   end
 end
