@@ -18,6 +18,10 @@ RSpec.describe StringCalculator, type: :service do
       it 'returns sum of more than two numbers' do
         expect(StringCalculator.add('1,2,3')).to eq 6
       end
+
+      it 'handles newlines as delimiters' do
+        expect(StringCalculator.add("1\n2,3")).to eq 6
+      end
     end
   end
 end
