@@ -1,2 +1,2 @@
-+class StringCalculator
-+end
+class StringCalculator
+end
