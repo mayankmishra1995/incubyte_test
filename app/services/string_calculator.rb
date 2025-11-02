@@ -6,5 +6,6 @@ class StringCalculator
     else
       numbers.to_i
     end
+    numbers.split(',').map(&:to_i).sum
   end
 end
