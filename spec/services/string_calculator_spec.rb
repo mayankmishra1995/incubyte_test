@@ -10,6 +10,10 @@ RSpec.describe StringCalculator, type: :service do
       it 'returns the number for single number' do
         expect(StringCalculator.add('1')).to eq 1
       end
+
+      it 'returns sum for two numbers' do
+        expect(StringCalculator.add('1,5')).to eq 6
+      endgit
     end
   end
 end
