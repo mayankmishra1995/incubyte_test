@@ -1,0 +1,25 @@
+# String Calculator TDD Kata
+Pure Ruby • RSpec • 100 % Green
+
+## What you’re looking at
+A zero-dependency Ruby service that solves the String Calculator TDD using Rspec.
+
+- 8 examples  
+- 8 commits (you can `git log --oneline` to check the commits)  
+- Clean service-object architecture
+
+## One-liner to run
+```bash
+bundle install && bundle exec rspec spec/services/string_calculator_spec.rb
+
+# Project layout (Rails-convention)
+- app/services/string_calculator.rb
+- spec/services/string_calculator_spec.rb
+
+# How to explore the TDD journey
+- git log --oneline
+# Each commit is one red → green → refactor cycle.
+
+# Local setup
+- git clone https://github.com/your-handle/string-calculator-tdd.git
+- cd string-calculator-tdd && bundle install
